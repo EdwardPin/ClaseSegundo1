@@ -1,0 +1,42 @@
+C C++ C# (unity) SAP GO Rust 
+
+string tiene 50 caracteres (8 bits)
+
+Python
+nombre = "Andres" 400 bits - 55 bytes
+saca una copia para imprimir asi que son 122 bytes 
+nunca usar print de nuevo (muchas copias)
+
+
+En c
+Andres son 6 bytes
+char nombre[6] = "andres";
+printf("mi nombres %c",nombre)
+Fifo (first ingress first out)
+
+C++ y C# controladores arduino, Drones y Malware
+
+El puntero, no saca una copia, mira donde esta la variable a usar, no creando una copia.
+Esto salva mas memoria, uno puede realizar todas las operaciones sobre la misma variable
+
+int x = 10;
+int *p = &x;  // 'p' es un puntero a int, que apunta a la dirección de 'x'
+
+se puede hacer lo siguiente
+
+#include <stdio.h>
+
+int main() {
+    int x = 10;
+    int *p = &x;   // puntero a x
+
+    printf("Valor de x: %d\n", x);        // 10
+    printf("Direccion de x: %p\n", p);    // dirección de x
+    printf("Valor apuntado por p: %d\n", *p);  // 10
+
+    *p = 20;  // modificamos el valor de x indirectamente
+
+    printf("Nuevo valor de x: %d\n", x);  // 20
+
+    return 0;
+}
